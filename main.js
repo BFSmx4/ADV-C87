@@ -15,12 +15,12 @@ canvas.addEventListener("mousedown", my_mousedown);
 
 function my_mousedown(e)
 {
-    //taking color from input box
-    //additional activity start
+    //tomar el color desde la caja de entrada
+    //comienzo de la actividad adicional
     color = document.getElementById("color").value;
     console.log(color);
-    //addition activity ends
-    
+    //fin de la actividad adicional
+	
      mouse_x = e.clientX - canvas.offsetLeft;
      mouse_y = e.clientY - canvas.offsetTop;
 
@@ -37,7 +37,7 @@ ctx.arc(mouse_x, mouse_y, 40 ,0 , 2*Math.PI);
 ctx.stroke();
 }
 
-//additional activity
+//actividad adicional
 
 function clearArea()
 {
